@@ -7,6 +7,7 @@ use Mix.Config
 
 # Configures the endpoint
 config :enchufe, EnchufeWeb.Endpoint,
+http: [port: {:system, "PORT"}],
   url: [host: "localhost"],
   secret_key_base: "3ubyh6x0giTpYEw8PhCf8MCjZ1D/7DoGZ4Z/VBwE+ffjPUzY7IngYWhg1j5ualgO",
   render_errors: [view: EnchufeWeb.ErrorView, accepts: ~w(html json)],

@@ -7,12 +7,21 @@ use Mix.Config
 # watchers to your application. For example, we use it
 # with brunch.io to recompile .js and .css sources.
 config :enchufe, EnchufeWeb.Endpoint,
-  http: [port: 4000],
-  debug_errors: true,
-  code_reloader: true,
-  check_origin: false,
-  watchers: [node: ["node_modules/brunch/bin/brunch", "watch", "--stdin",
-                    cd: Path.expand("../assets", __DIR__)]]
+  load_from_system_env: true,
+  http: [port: {:system, "4000"}],
+  url: [host: "localhost", port: {:system, "4000"}], # This is critical for ensuring web-sockets properly authorize.
+  cache_static_manifest: "priv/static/cache_manifest.json",
+  server: true,
+  root: ".",
+  version: Application.spec(:phoenix_distillery, :vsn)
+
+# config :enchufe, EnchufeWeb.Endpoint,
+#   http: [port: 4000],
+#   debug_errors: true,
+#   code_reloader: true,
+#   check_origin: false,
+#   watchers: [node: ["node_modules/brunch/bin/brunch", "watch", "--stdin",
+#                     cd: Path.expand("../assets", __DIR__)]]
 
 # ## SSL Support
 #
