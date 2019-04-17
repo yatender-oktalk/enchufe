@@ -38,7 +38,9 @@ defmodule Enchufe.Mixfile do
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
       {:plug_cowboy, "~> 1.0"},
-      {:jason, "~> 1.1"}
+      {:jason, "~> 1.1"},
+      {:distillery, "~> 2.0", warn_missing: false},
+      {:edeliver, ">= 1.6.0"}
     ]
   end
 end
