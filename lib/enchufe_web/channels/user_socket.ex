@@ -3,6 +3,8 @@ defmodule EnchufeWeb.UserSocket do
 
   ## Channels
   channel "timer:*", EnchufeWeb.TimerChannel
+  channel "feed:*", EnchufeWeb.FeedChannel
+  channel "challenge:*", EnchufeWeb.ChallengeChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket

@@ -53,14 +53,26 @@ let socket = new Socket("/socket", {params: {token: window.userToken}})
 
 socket.connect()
 
-// Now that you are connected, you can join channels with a topic:
+
 let channel = socket.channel('timer:update', {})
-channel.on('new_time', msg => {
-  console.log("The timer is: ", msg.time)
-})
-
 channel.join()
-  .receive('ok', resp => { console.log('Joined successfully', resp) })
-  .receive('error', resp => { console.log('Unable to join', resp) })
 
+.receive('ok', resp => { console.log('Joined successfully', resp) })
+.receive('error', resp => { console.log('Unable to join', resp) })
+
+let startTimer = function (event) {
+  event.preventDefault();
+  channel.push('start_timer', {})
+  .receive('ok', resp => { console.log('Started timer', resp) })
+}
+
+// document.getElementById('start-timer').onclick = startTimer(event)
+document.getElementById("start-timer")
+    .addEventListener("click", (event) => startTimer(event))
+
+
+channel.on('new_time', msg => {
+  document.getElementById('status').innerHTML = msg.response
+  document.getElementById('timer').innerHTML = msg.time
+});
 export default socket
