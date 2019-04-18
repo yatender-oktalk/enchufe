@@ -60,16 +60,16 @@ defmodule Enchufe.Timer do
       "title" => "दैनिक जीवन में pH का क्या महत्व है ?",
       "n_views" => 2980,
       "location" => %{
-          "country" => 'IN',
-          "countryCode" => 'IN',
-          "region" =>'Karnataka',
-          "regionCode" =>'',
+          "country" => "IN",
+          "countryCode" => "IN",
+          "region" => "Karnataka",
+          "regionCode" => "",
           "city" => "Bengaluru",
           "postal" => "560076",
           "ip" => "106.51.21.204",
           "latitude" => 12.9833,
           "longitude" => 77.5833,
-          "timezone" => ''
+          "timezone" => ""
         }
       },
       %{
@@ -79,16 +79,16 @@ defmodule Enchufe.Timer do
         "title" => "जल का हमारे दैनिक जीवन में क्या महत्व है?",
         "n_views" => 29890,
         "location" => %{
-          country: 'IN',
-          countryCode: 'IN',
-          region: 'National Capital Territory of Delhi',
-          regionCode: '',
-          city: 'New Delhi',
-          postal: '110043',
-          ip: '139.167.250.100',
-          latitude: 28.6014,
-          longitude: 77.1989,
-          timezone: ''
+          "country" => "IN",
+          "countryCode" => "IN",
+          "region" => 'National Capital Territory of Delhi',
+          "regionCode" => "",
+          "city" => 'New Delhi',
+          "postal" => '110043',
+          "ip" =>'139.167.250.100',
+          "latitude" => 28.6014,
+          "longitude" => 77.1989,
+          "timezone" => ""
         }
       },
       %{
@@ -101,16 +101,17 @@ defmodule Enchufe.Timer do
         "title" => "क्या बकचोदी चलती रेहनी चाहिए ?",
         "n_views" => 29890,
         "location" => %{
-          "country" => 'IN',
-        "countryCode" => 'IN',
-        "region" => 'Bihar',
-        "regionCode" => '',
-        "city" => '',
-        "postal" => '',
-        "ip" => '106.207.33.43',
+          "country" => "IN",
+        "countryCode" => "IN",
+        "region" => "Bihar",
+        "regionCode" => "",
+        "city" => "",
+        "postal" => "",
+        "ip" => "106.207.33.43",
         "latitude" => 25.6,
         "longitude" => 85.1167,
-        "timezone" => '' }
+        "timezone" => ""
+      }
       }
     ]
 
