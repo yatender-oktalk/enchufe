@@ -13,6 +13,7 @@ config :enchufe, EnchufeWeb.Endpoint,
   cache_static_manifest: "priv/static/cache_manifest.json",
   server: true,
   root: ".",
+  check_origin: false,
   version: Application.spec(:phoenix_distillery, :vsn)
 
 # config :enchufe, EnchufeWeb.Endpoint,

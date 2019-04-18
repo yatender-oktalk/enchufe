@@ -75,4 +75,5 @@ channel.on('new_time', msg => {
   document.getElementById('status').innerHTML = msg.response
   document.getElementById('timer').innerHTML = msg.time
 });
+
 export default socket
