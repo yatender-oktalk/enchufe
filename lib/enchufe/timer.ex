@@ -81,11 +81,11 @@ defmodule Enchufe.Timer do
         "location" => %{
           "country" => "IN",
           "countryCode" => "IN",
-          "region" => 'National Capital Territory of Delhi',
+          "region" => "National Capital Territory of Delhi",
           "regionCode" => "",
-          "city" => 'New Delhi',
-          "postal" => '110043',
-          "ip" =>'139.167.250.100',
+          "city" => "New Delhi",
+          "postal" => "110043",
+          "ip" => "139.167.250.100",
           "latitude" => 28.6014,
           "longitude" => 77.1989,
           "timezone" => ""
