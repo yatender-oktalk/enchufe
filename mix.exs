@@ -37,11 +37,16 @@ defmodule Enchufe.Mixfile do
       {:phoenix_html, "~> 2.10"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
-      {:plug_cowboy, "~> 1.0"},
+      {:plug_cowboy, "~> 1.0.0"},
       {:jason, "~> 1.1"},
       {:cowboy, "~> 1.0.4"},
       {:distillery, "~> 2.0", warn_missing: false},
-      {:edeliver, ">= 1.6.0"}
+      {:edeliver, ">= 1.6.0"},
+      {:nebulex_redis_adapter, "~> 1.0"},
+      {:exredis, ">= 0.2.4"},
+      {:tesla, "~> 1.2.0"},
+      # optional, but recommended adapter
+      {:hackney, "~> 1.9"},
     ]
   end
 end
