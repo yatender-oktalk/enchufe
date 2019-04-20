@@ -58,14 +58,38 @@ defmodule Enchufe.Timer do
       "t_id" => "5bc04ed3e2478442a0b58745",
       "creator_handle" => "guest84nic",
       "title" => "दैनिक जीवन में pH का क्या महत्व है ?",
-      "n_views" => 2980
+      "n_views" => 2980,
+      "location" => %{
+          "country" => "IN",
+          "countryCode" => "IN",
+          "region" => "Karnataka",
+          "regionCode" => "",
+          "city" => "Bengaluru",
+          "postal" => "560076",
+          "ip" => "106.51.21.204",
+          "latitude" => 12.9833,
+          "longitude" => 77.5833,
+          "timezone" => ""
+        }
       },
       %{
         "type" => "QUESTION",
         "t_id" => "5cb1626e8588f22beb666a88",
         "creator_handle" => "random123",
         "title" => "जल का हमारे दैनिक जीवन में क्या महत्व है?",
-        "n_views" => 29890
+        "n_views" => 29890,
+        "location" => %{
+          "country" => "IN",
+          "countryCode" => "IN",
+          "region" => "National Capital Territory of Delhi",
+          "regionCode" => "",
+          "city" => "New Delhi",
+          "postal" => "110043",
+          "ip" => "139.167.250.100",
+          "latitude" => 28.6014,
+          "longitude" => 77.1989,
+          "timezone" => ""
+        }
       },
       %{
         "type" => "ANSWER",
@@ -75,7 +99,19 @@ defmodule Enchufe.Timer do
         "logo" => "https://s3-ap-southeast-1.amazonaws.com/ok.talk.images/user_5b7f24034a4fe60a16b7df28/471114a4-b649-4103-b01e-1d10aa2f1ef9_voke_img_crop_2754487f-c2dc-479c-a75d-302c9d55c161.jpg",
         "creator_handle" => "random123",
         "title" => "क्या बकचोदी चलती रेहनी चाहिए ?",
-        "n_views" => 29890
+        "n_views" => 29890,
+        "location" => %{
+          "country" => "IN",
+        "countryCode" => "IN",
+        "region" => "Bihar",
+        "regionCode" => "",
+        "city" => "",
+        "postal" => "",
+        "ip" => "106.207.33.43",
+        "latitude" => 25.6,
+        "longitude" => 85.1167,
+        "timezone" => ""
+      }
       }
     ]
 
