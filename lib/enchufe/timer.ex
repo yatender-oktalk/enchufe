@@ -50,7 +50,6 @@ defmodule Enchufe.Timer do
     }
   end
 
-
   def get_random_item() do
     items = [
       %{
@@ -93,10 +92,7 @@ defmodule Enchufe.Timer do
       },
       %{
         "type" => "ANSWER",
-        "payload" => "https://dmeplmvppt9e3.cloudfront.net/tus/1abfa6fd-642d-466d-b26a-cd6b66348d63_1539330366.opus",
-        "share_url" => "https://getvokal.com/question/1CRMG#Rahul.kumar",
         "t_id" => "5bc04ed3e2478442a0b58745",
-        "logo" => "https://s3-ap-southeast-1.amazonaws.com/ok.talk.images/user_5b7f24034a4fe60a16b7df28/471114a4-b649-4103-b01e-1d10aa2f1ef9_voke_img_crop_2754487f-c2dc-479c-a75d-302c9d55c161.jpg",
         "creator_handle" => "random123",
         "title" => "क्या बकचोदी चलती रेहनी चाहिए ?",
         "n_views" => 29890,

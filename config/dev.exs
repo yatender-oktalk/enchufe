@@ -54,6 +54,16 @@ config :enchufe, EnchufeWeb.Endpoint,
 # Do not include metadata nor timestamps in development logs
 config :logger, :console, format: "[$level] $message\n"
 
+
+config :exredis,
+  host: "127.0.0.1",
+  port: 6379,
+  # password: "EbCO1d1V26fH",
+  db: 0,
+  reconnect: :no_reconnect,
+  max_queue: :infinity
+
+
 # Set a higher stacktrace during development. Avoid configuring such
 # in production as building large stacktraces may be expensive.
 config :phoenix, :stacktrace_depth, 20
